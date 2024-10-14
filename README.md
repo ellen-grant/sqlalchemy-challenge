@@ -43,6 +43,34 @@ Returns the temperature observations for the most active station over the last 1
 5. Temperature Statistics (`/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`)
 Returns the minimum, average, and maximum temperatures for a given date range.
 
+## Precipitation Analysis
+The Precipitation Analysis focuses on examining the rainfall data for the last year in the dataset. The analysis performs the following steps:
+1. Retrieve the Most Recent Date: A query is used to find the most recent date in the dataset, which is 8/23/2017.
+2. Query Last 12 Months of Data: The API queries the last 12 months of precipitation data without explicitly passing the date, ensuring that the precipitation information is dynamically retrieved based on the most recent data available.
+3. Data Processing: The results are saved to a Pandas DataFrame, and the data is sorted by date to ensure correct temporal order.
+4. Plotting: The precipitation data is plotted, with dates on the x-axis and precipitation levels on the y-axis, providing a clear visualization of rainfall trends over the year.
+5. Summary Statistics: Pandas is used to calculate and display summary statistics, such as the mean, median, and standard deviation of precipitation data, offering insights into rainfall patterns.
+### Results
+The precipitation analysis provides valuable insights into rainfall patterns across the last year of data. The results show significant variability in daily precipitation levels, with some periods experiencing heavy rainfall and others being relatively dry. The summary statistics reveal that the average daily rainfall is low, indicating that most days in Hawaii see minimal precipitation, but the presence of higher maximum values suggests occasional heavy downpours.
+
+The plot of precipitation over time highlights potential seasonal trends, with certain months exhibiting increased rainfall, possibly due to seasonal weather patterns such as tropical storms or rainy seasons in the region. This information can be useful for studying Hawaii's climate and understanding how rainfall is distributed throughout the year.
+![precipitation_output](https://github.com/user-attachments/assets/ab588e78-5e52-435a-823e-2bd8869f71bc)
+
+## Station Analysis
+The Station Analysis explores the weather stations in the dataset to identify the most active station and analyze temperature observations. The steps include:
+1. Station Count: A query is performed to count the number of weather stations available in the dataset, which totals 9 stations.
+2. Most Active Station: A query lists the stations by observation count in descending order to determine the most active station, which is USC00519281.
+3. Temperature Statistics: For the most active station, the API retrieves the minimum, maximum, and average temperatures. This provides insights into the range of temperature values recorded at the busiest station.
+4. Temperature Observations: The analysis retrieves the last 12 months of temperature observations (TOBS) for the most active station.
+5. Visualization: A histogram with 12 bins is plotted to show the distribution of temperature observations for the most active station over the last year.
+### Results
+The station analysis shows that Hawaii has nine weather stations reporting climate data, with USC00519281 being the most active station in terms of recorded observations. This station provides the most reliable source of temperature data for analysis.
+
+The results of the temperature statistics for the most active station demonstrate a typical range of temperatures, with a minimum of around 60°F, an average of 72°F, and a maximum nearing 85°F. These values indicate a relatively mild and stable climate, typical of tropical regions like Hawaii.
+
+The histogram of temperature observations further emphasizes this stability, as the majority of the data points are clustered around the average, with fewer extreme values. This suggests a consistent climate with moderate variation in temperatures, which can be beneficial for understanding long-term climate patterns or for industries such as agriculture and tourism that are sensitive to weather fluctuations.
+![station_output](https://github.com/user-attachments/assets/7c7e1c59-02b9-4cfc-aeea-f7893e49e142)
+
 ## Limitations
 While the Hawaii Climate Analysis API provides valuable insights into historical climate data, there are several limitations to consider:
 1. Limited Geographical Coverage:
