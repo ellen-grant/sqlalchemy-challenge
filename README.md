@@ -54,6 +54,7 @@ The Precipitation Analysis focuses on examining the rainfall data for the last y
 The precipitation analysis provides valuable insights into rainfall patterns across the last year of data. The results show significant variability in daily precipitation levels, with some periods experiencing heavy rainfall and others being relatively dry. The summary statistics reveal that the average daily rainfall is low, indicating that most days in Hawaii see minimal precipitation, but the presence of higher maximum values suggests occasional heavy downpours.
 
 The plot of precipitation over time highlights potential seasonal trends, with certain months exhibiting increased rainfall, possibly due to seasonal weather patterns such as tropical storms or rainy seasons in the region. This information can be useful for studying Hawaii's climate and understanding how rainfall is distributed throughout the year.
+
 ![precipitation_output](https://github.com/user-attachments/assets/ab588e78-5e52-435a-823e-2bd8869f71bc)
 
 ## Station Analysis
@@ -69,6 +70,7 @@ The station analysis shows that Hawaii has nine weather stations reporting clima
 The results of the temperature statistics for the most active station demonstrate a typical range of temperatures, with a minimum of around 60°F, an average of 72°F, and a maximum nearing 85°F. These values indicate a relatively mild and stable climate, typical of tropical regions like Hawaii.
 
 The histogram of temperature observations further emphasizes this stability, as the majority of the data points are clustered around the average, with fewer extreme values. This suggests a consistent climate with moderate variation in temperatures, which can be beneficial for understanding long-term climate patterns or for industries such as agriculture and tourism that are sensitive to weather fluctuations.
+
 ![station_output](https://github.com/user-attachments/assets/7c7e1c59-02b9-4cfc-aeea-f7893e49e142)
 
 ## Limitations
