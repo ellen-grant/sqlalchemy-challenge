@@ -117,3 +117,6 @@ The Hawaii Climate Analysis API provides a valuable tool for accessing historica
 While the dataset offers significant value, users should be aware of its limitations, including its focus on historical data, limited variables, and specific geographical coverage. Despite these constraints, the API has broad applications in fields such as climate research, agriculture, tourism, and education.
 
 As climate change continues to affect global weather patterns, this API can serve as a starting point for more in-depth research on how these changes manifest in specific regions like Hawaii. By providing accessible data, the API encourages exploration, analysis, and innovation to better understand and mitigate the impacts of climate change.
+
+## References
+Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012: An overview of the Global Historical Climatology Network-Daily Database. Journal of Atmospheric and Oceanic Technology, 29, 897-910, https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml.
